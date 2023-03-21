@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 55px 75px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor .lado_izquierdo {
+    position: relative;
+    background: gray;
+    padding: 40px;
+}
+
+.perfil {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.perfil .imagen_perfil {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.perfil .imagen_perfil img {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil h2 {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.perfil h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contacto {
+    padding-top: 40px;
+}
+
+.contacto ul {
+    position: relative;
+}
+
+.contacto ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contacto ul li .icono {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: wheat;
+}
+
+.contacto ul li .texto {
+    color: white;
+    font-weight: 200;
+}
+
+.contacto.formacion li {
+    margin-bottom: 15px;
+}
+
+.contacto.formacion h5 {
+    color: wheat;
+    font-weight: 500;
+}
+
+.contacto.formacion h4:nth-child(2) {
+    color: white;
+    font-weight: 500;
+}
+
+.contacto.formacion h4 {
+    color: white;
+    font-weight: 300;
+}
+
+.contacto.idioma .porcentaje {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: lightgrey;
+    display: block;
+    margin-top: 5px;
+}
+
+.contacto.idioma .porcentaje div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background: wheat;
+}
+
+.titulo {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contenedor .lado_derecho {
+    position: relative;
+    background: white;
+    padding: 40px;
+}
+
+.descripcion {
+    margin-bottom: 50px;
+}
+
+.descripcion:last-child {
+    margin-bottom: 0px;
+}
+
+.titulo2 {
+    color: wheat;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: gray;
+}
+
+.descripcion .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.descripcion .box .año_compañia {
+    min-width: 150px;
+}
+
+.descripcion .box .año_compañia h5 {
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 600;
+}
+
+.descripcion .box .texto h4 {
+    text-transform: uppercase;
+    color: wheat;
+    font-size: 16px;
+}
+
+.habilidades .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades .box h4 {
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 500;
+}
+
+.habilidades .box .porcentaje {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: lightgrey;
+}
+
+.habilidades .box .porcentaje div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: wheat;
+}
+
+.intereses ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.intereses ul li {
+    list-style: none;
+    color: gray;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.intereses ul li .fa {
+    color: wheat;
+    font-size: 18px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.contenedor_presupuesto {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 600px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.contenedor_presupuesto2 {
+    background-color: transparent;
+    width: 600px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 20px 30px 20px;
+    gap: 20px;
+    text-transform: capitalize;
+    border-radius: 20px;
+}
+
+.comentario {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(245, 222, 179, 0.5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 20px;
+    color: gray;
+}
+
+.contenedor_intpresupuesto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.imagen_presupuesto {
+    width: 50px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contenedor_presupuesto img {
+    width: 50px;
+}
+
+.input_presupuesto {
+    width: 500px;
+    height: 100px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    gap: 5px;
+}
+
+#nuevo_presupuesto {
+    outline: none;
+    border: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0px 10px 0px 10px;
+    font-size: 15px;
+    background-color: transparent;
+    color: black;
+    border-bottom: 2px solid white;
+    transition-duration: 250ms;
+}
+
+#nuevo_presupuesto::placeholder {
+    color: gray;
+}
+
+#nuevo_presupuesto:focus {
+    border-bottom: 2px solid wheat;
+}
+
+.boton_presupuesto {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 5px 0px 0px;
+}
+
+button {
+    padding: 12px 20px 12px 20px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    color: gray;
+}
+
+.close {
+    font-size: 12px;
+    position: absolute;
+    right: 150px;
+    width: 20px;
+    z-index: 20;
+    transition-duration: 250ms;
+    display: block;
+    cursor: pointer;
+    color: black;
+}
+
+
+@media (max-width: 1000px) {
+    .contenedor {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .intereses ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+    .descripcion .box {
+        flex-direction: column;
+    }
+
+    .descripcion .box .año_compañia {
+        margin-bottom: 5px;
+    }
+
+    .intereses ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .habilidades .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .boton_presupuesto {
+        flex-direction: column;
+    }
+
+    .contenedor_presupuesto {
+        width: 275px;
+    }
+
+    
+    .contenedor_presupuesto img {
+        flex-direction: column;
+        margin-top: 35px;
+    }
+
+    .contenedor_presupuesto2 {
+        flex-direction: column;
+        width: 275px;
+    }
+
+    .contenedor_intpresupuesto {
+        flex-direction: column;
+        width: 275px;
+    }
+
+    .input_presupuesto {
+        flex-direction: column;
+        width: 275px;
+    }
+
+    #nuevo_presupuesto {
+        text-align: center;
+        width: 275px;
+    }
+
+    .comentario {
+        padding: 35px 0px 0px 20px;
+        height: 10px;
+        align-items: flex-end;
+    }
+
+    .close {
+        right: 50px;
+    }
+}
